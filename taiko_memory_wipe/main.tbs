@@ -1,0 +1,17 @@
+include "global.tbh"
+
+'====================================================================
+sub on_sys_init
+
+	pat.play("R~",PL_PAT_CANINT)
+	
+	dim i as dword
+	
+	
+	for i = 0 to 100
+		stor.setdata(strgen(200,"0"),(i*200)+1)
+		if i*200 > stor.size then exit for
+	next i
+	
+	pat.play("G~",PL_PAT_CANINT)
+end sub
