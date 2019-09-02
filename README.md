@@ -1,7 +1,5 @@
-# CA-Memory-Wipe
+# Memory Wipe Demo
 
-To download the most recent project without installing GIT, please press the green "Clone or Download" button and select "Download ZIP".
+Some Tibbo BASIC projects save data to device memory; then, when you upload another project, the data is still there. Or perhaps you want to upload the *same*project again, but test your setting initialization code. In other words, you want the device to be wiped clean before you upload your project, so you can see what your code does on a brand-new device.
 
-For more detail about this project, please visit <a href="http://tibbo.com/programmable/applications/examples/memory_wipe.html" target="_blank">Project Description Page</a>
-
-
+This is what this little project does. Run it on your device, and it will simply wipe the EEPROM squeaky clean, filling it up with zeros. It starts up with the red LED on, and once it's done initializing the memory, it switches the green LED on instead. Then you can load your other project and run it as if it's on a brand-new device.
